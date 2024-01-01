@@ -5,29 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScorVigo Tech Pvt Ltd</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
         }
 
         header {
-            background-color: #333;
+            background-color: cadetblue;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
         }
 
         nav {
-            background-color: #444;
-            overflow: hidden;
+            background-color: #343a40;
         }
 
         nav a {
-            float: right;
-            display: block;
             color: white;
             text-align: center;
             padding: 14px 16px;
@@ -35,16 +33,15 @@
         }
 
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #23272b;
         }
 
         section {
-            padding: 20px;
+            padding: 40px;
         }
 
         footer {
-            background-color: #333;
+            background-color: #343a40;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -53,6 +50,13 @@
             width: 100%;
         }
     </style>
+    <script>
+        $(document).ready(function () {
+            $("#contactUsLink").click(function () {
+                $("#contactModal").modal('show');
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -61,22 +65,73 @@
         <h1>ScorVigo Tech Pvt Ltd</h1>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">Contact Us</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="contactUsLink">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <section>
-        <br>
-        <br>
-        <br>
-        <p>Welcome to ScorVigo Tech Pvt Ltd, your reliable partner in custom website and software development.</p> 
-        <p>We specialize in creating tailored solutions to meet the unique needs of our clients. Our team is </p>
-        <p>dedicated to providing high-quality services, from initial development to ongoing maintenance and support.</p>
-        <p>At ScorVigo Tech, we strive to deliver innovative and efficient solutions for various industries and businesses.</p>
-        <p>Explore our website to learn more about our services and how we can help you achieve your digital goals.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Welcome to ScorVigo Tech Pvt Ltd</h2>
+                    <p>Your reliable partner in custom website and software development. We specialize in creating tailored solutions to meet the unique needs of our clients. Our team is dedicated to providing high-quality services, from initial development to ongoing maintenance and support. At ScorVigo Tech, we strive to deliver innovative and efficient solutions for various industries and businesses. Explore our website to learn more about our services and how we can help you achieve your digital goals.</p>
+                </div>
+                <div class="col-md-6">
+                    <!-- Bootstrap Modal -->
+                    <div class="modal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Bootstrap Form -->
+                                    <form id="contactUsForm">
+                                        <div class="form-group">
+                                            <label for="name">Name:</label>
+                                            <input type="text" class="form-control" id="name" name="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contactNumber">Contact Number:</label>
+                                            <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email Address:</label>
+                                            <input type="email" class="form-control" id="email" name="email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="query">Query:</label>
+                                            <textarea class="form-control" id="query" name="query" rows="4" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>

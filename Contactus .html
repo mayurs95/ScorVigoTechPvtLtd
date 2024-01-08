@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScorVigo Tech Pvt Ltd</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./Styles.css">
+    <script>
+        $(document).ready(function () {
+            $("#contactUsLink").click(function () {
+                $("#contactModal").modal('show');
+            });
+        });
+    </script>
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#" style="color: white;">Scorvigo Tech Pvt Ltd</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html" id="homeLink">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html" id="aboutUsLink">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html" id="servicesLink">Services</a>
+                </li>
+                <li class="nav-item">
+                    <div class="header-right-btn f-right d-none d-lg-block">
+                        <a href="Contactus .html" class="btn header-btn">Contact Now</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Contact Us</h1>
+
+    <p>If you have any questions or concerns, feel free to reach out to us using the following contact information:</p>
+
+    <div class="contact-info">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-box">
+                    <i class="icon fas fa-phone"></i>
+                    <h4>Contact Us</h4>
+                    <p>Feel free to give us a call.</p>
+                    <a href="tel:+918329952678" style="color: #fff;">8329952678</a><br>
+                    <a href="tel:+8149572640" style="color: #fff;">8149572640</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="email-box">
+                    <i class="icon fas fa-envelope"></i>
+                    <h4>Email Us</h4>
+                    <p>Send us an email with your inquiries.</p>
+                    <a href="mailto:mayursonne995@gmail.com" style="color: #fff;">mayursonne995@gmail.com</a><br>
+                    <a href="mailto:mail.nikita1611@gmail.com" style="color: #fff;">mail.nikita1611@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="request-back-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-wrapper">
+                        <h2>Get In Touch</h2>
+                        <p>Feel free to send us a message. We'd love to hear from you!</p>
+                        <form action="your_form_action_url_here" method="post">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" placeholder="Your Message" rows="6" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="submit" class="btn button-contactForm">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Scorvigo Tech Pvt Ltd
+    </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+
+</html>

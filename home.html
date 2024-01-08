@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScorVigo Tech Pvt Ltd</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./Styles.css">
+    <script>
+        $(document).ready(function () {
+            $("#contactUsLink").click(function () {
+                $("#contactModal").modal('show');
+            });
+        });
+
+        $(document).ready(function () {
+        var currentPage = window.location.pathname;
+        if (currentPage.includes('home.html')) {
+            $('#homeLink').addClass('active');
+        } else if (currentPage.includes('AboutUs.html')) {
+            $('#aboutUsLink').addClass('active');
+        } else if (currentPage.includes('services.html')) {
+            $('#servicesLink').addClass('active');
+        }
+    });
+    </script>
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#" style="color: white;">Scorvigo Tech Pvt Ltd</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html" id="homeLink">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html" id="aboutUsLink">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html" id="servicesLink">Services</a>
+                </li>
+                <li class="nav-item">
+                    <div class="header-right-btn f-right d-none d-lg-block">
+                        <a href="Contactus.html" class="btn header-btn">Contact Now</a>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+    
+    <div class="services-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h2>Our Services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-services text-center">
+                        <div class="icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="services-caption">
+                            <h4>Website Development</h4>
+                            <p>Build credibility and stay ahead of the digital game by choosing VTPL to be your partner in
+                                website design & development that delivers a professional look and feel, is easy to
+                                navigate, mobile responsive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-services text-center">
+                        <div class="icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="services-caption">
+                            <h4>Software Development</h4>
+                            <p>High-end enterprise solutions. That's what we do & we're good at it. Vishwa technologies
+                                has wealth of experience software application that meet an organisation’s business
+                                requirement. We also understand that sometimes your business can not be defined in a
+                                single “off-the-shelf” package and you have a need for solution that is outside the box.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-services text-center">
+                        <div class="icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="services-caption">
+                            <h4>Mobile Application</h4>
+                            <p>End-to-end mobile application development for consumer-facing and corporate environments.
+                                With VTPL, you provide your external and internal users with sleek, productive and
+                                easy-to-use mobile solutions and they pay you back with increased loyalty and real-world
+                                engagement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Request a Call Section -->
+    <div class="request-back-area section-padding30" style="background-color: #002d5b;">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-xl-3 col-lg-4 col-md-5">
+                    <div class="request-content">
+                        <h3 style="color: #fff;">Request a Call</h3>
+                        <p style="color: #fff;">In case of any queries regarding our products or services, kindly fill in the enquiry form to place a callback. Our representatives will get in touch with you shortly.</p>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-md-7">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-wrapper">
+                                <div class="form-contact contact_form" id="contactForm" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m1-3">
+                                        <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.1044496582185!2d79.06345131446882!3d21.148241185933713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0f57621f4fd%3A0xdfb5dcfaf9146b64!2sRTO+Rd%2C+Priyadarshini+Colony%2C+Civil+Lines%2C+Nagpur%2C+Maharashtra+440001!5e0!3m2!1sen!2sin!4v1552384771983" height="350" frameborder="0" style="border-radius: 24px;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Request a Call Section -->
+
+    <footer>
+        &copy; 2024 Scorvigo Tech Pvt Ltd
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+
+</html>

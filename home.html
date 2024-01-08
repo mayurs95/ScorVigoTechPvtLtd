@@ -10,27 +10,8 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./Styles.css">
-    <script>
-        $(document).ready(function () {
-            $("#contactUsLink").click(function () {
-                $("#contactModal").modal('show');
-            });
-        });
-
-        $(document).ready(function () {
-        var currentPage = window.location.pathname;
-        if (currentPage.includes('home.html')) {
-            $('#homeLink').addClass('active');
-        } else if (currentPage.includes('AboutUs.html')) {
-            $('#aboutUsLink').addClass('active');
-        } else if (currentPage.includes('services.html')) {
-            $('#servicesLink').addClass('active');
-        }
-    });
-    </script>
     <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#" style="color: white;">Scorvigo Tech Pvt Ltd</a>
@@ -172,6 +153,7 @@
         &copy; 2024 Scorvigo Tech Pvt Ltd
     </footer>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="./Script.js"></script>
 </body>
 
 </html>

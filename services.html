@@ -7,11 +7,86 @@
     <title>ScorVigo Tech Pvt Ltd</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+            font-family: 'Arial', sans-serif;
+        }
+
+        nav {
+            background-color: #08254ce2;
+        }
+
+        nav a.navbar-brand,
+        nav a.nav-link {
+            color: white !important;
+        }
+
+        section#services {
+            background-color: #ffffff;
+            padding: 80px 0;
+        }
+
+        section#services h2.section-heading {
+            color: #007bff;
+        }
+
+        section#services p.text-muted {
+            color: #6c757d;
+        }
+
+        section#services .card {
+            border: none;
+            transition: transform 0.2s;
+        }
+
+        section#services .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #08254ce2;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .button-contactForm,
+.header-btn {
+    background: #fbfcfd;
+    color: #ae0d0d !important;
+    display: inline-block;
+    padding: 10px 18px; /* Adjusted padding for a smaller button */
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #ffffff;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 28px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-contactForm:hover,
+.header-btn:hover {
+    background: #ff656a !important;
+    color: #ffffff !important;
+}
+
+    </style>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./Styles.css">
-    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#" style="color: white;">Scorvigo Tech Pvt Ltd</a>
@@ -32,85 +107,70 @@
                 </li>
                 <li class="nav-item">
                     <div class="header-right-btn f-right d-none d-lg-block">
-                        <a href="./Contactus .html" class="btn header-btn">Contact Now</a>
+                        <a href="./Contactus .html" class="btn header-btn" style="
+                        background-color: #fbfbfb;
+                    ">Contact Now</a>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="col-lg-12">
-    <div class="text-center">
-        <h2 id="introTitle">Our Extensive Range of Services</h2>
-        <p>Welcome to Scorvigo Tech Pvt Ltd, your gateway to a world of transformative digital solutions. We specialize in three key pillars of technological advancement, offering a diverse array of services tailored to meet the evolving demands of the digital landscape.</p>
-    </div>
-</div>
-
-
-    < <div class="col-md-3 mb-4">
-        <div class="single-services text-center">
-               <div class="web-design-icon">
-                <i class="fas fa-paint-brush"></i>
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Our Services</h2>
+                    <p class="text-muted">We provide a range of services to meet your business needs.</p>
+                </div>
             </div>
-            <div class="web-design-caption">
-                <h2 id="softwareDevelopmentTitle">Software Development</h2>
-                <p>Bespoke Software Solutions: Tailored applications designed to meet your unique business requirements.</p>
-                <p>Enterprise Software: Scalable and robust solutions for enhancing operational efficiency.</p>
-                <p>Mobile App Development: Harness the power of mobile platforms with intuitive and innovative applications.</p>
+            <div class="row">
+                <!-- Service 1: Custom Software Application -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <i class="card-img-top fas fa-laptop-code fa-4x text-primary mt-3"></i>
+                        <div class="card-body">
+                            <h4 class="card-title">Custom Software</h4>
+                            <p class="card-text text-muted">Tailored software solutions to streamline your business processes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Website Development -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <i class="card-img-top fas fa-globe fa-4x text-primary mt-3"></i>
+                        <div class="card-body">
+                            <h4 class="card-title">Website Development</h4>
+                            <p class="card-text text-muted">Professional and responsive websites to establish your online presence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Maintenance Services -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <i class="card-img-top fas fa-tools fa-4x text-primary mt-3"></i>
+                        <div class="card-body">
+                            <h4 class="card-title">Maintenance</h4>
+                            <p class="card-text text-muted">Regular maintenance and support to keep your systems running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: Digital Marketing -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <i class="card-img-top fas fa-chart-bar fa-4x text-primary mt-3"></i>
+                        <div class="card-body">
+                            <h4 class="card-title">Digital Marketing</h4>
+                            <p class="card-text text-muted">Strategic digital marketing to enhance your online visibility and reach.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Second box -->
-    <div class="col-md-3 mb-4">
-        <div class="single-services text-center">
-            <div class="web-design-icon">
-                <i class="fas fa-paint-brush"></i>
-            </div>
-            <div class="web-design-caption">
-                <h2 id="digitalMarketingTitle">Digital Marketing</h2>
-                <p>Search Engine Optimization (SEO): Elevate your online visibility and reach the right audience.</p>
-                <p>Social Media Strategies: Engage and connect with your audience through strategic social media campaigns.</p>
-                <p>Content Marketing: Compelling content that tells your brand story and enhances your digital presence.</p>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Third box -->
-    <div class="col-md-3 mb-4">
-        <div class="single-services text-center">
-               <div class="web-design-icon">
-                <i class="fas fa-paint-brush"></i>
-            </div>
-            <div class="web-design-caption">
-                <h2 id="websiteDevelopmentTitle">Website Development</h2>
-                <p>Search Engine Optimization (SEO): Elevate your online visibility and reach the right audience.</p>
-                <p>Social Media Strategies: Engage and connect with your audience through strategic social media campaigns.</p>
-                <p>Content Marketing: Compelling content that tells your brand story and enhances your digital presence.</p>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Fourth box -->
-    <div class="col-md-3 mb-4">
-        <div class="single-services text-center">
-            <div class="digital-marketing-icon">
-                <i class="fas fa-chart-line"></i>
-            </div>
-            <div class="digital-marketing-caption">
-                <h2 id="uiUxDesignTitle">UI/UX Design</h2>
-                <p>User-Centric Designs: Crafted with the end-user in mind for enhanced usability.</p>
-                <p>Interface Innovation: Intuitive and visually appealing interfaces that elevate user experiences.</p>
-                <p>At Scorvigo Tech, we don't just provide services; we deliver strategic solutions that propel your business forward.</p>
-            </div>
-        </div>
-    </div>
-    
-
-
-
-    
-
+    </section>
 
     <footer>
         &copy; 2024 Scorvigo Tech Pvt Ltd

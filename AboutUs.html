@@ -10,13 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./Styles.css">
+
     <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
+            background-color: #f8f9fa; /* Consistent background color */
+        }
+
+        nav {
+            background-color: #08254ce2; /* Consistent navigation bar color */
+        }
+
+        .navbar-brand,
+        .nav-link,
+        .header-btn {
+            color: white !important; /* Consistent text color for navigation links and buttons */
         }
 
         #aboutUs {
@@ -29,7 +40,7 @@
         }
 
         .about-us-container {
-            background-color: #f8f9fa;
+            background-color: #eef7ff; /* Consistent background color for custom containers */
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             padding: 30px;
@@ -41,8 +52,8 @@
             top: 0;
             right: 0;
             bottom: 0;
-            width: 50%; /* Adjust the width of the square container as needed */
-            background-color: #007bff;
+            width: 50%;
+            background-color: #007bff; /* Consistent background color for custom square containers */
             color: white;
             padding: 30px;
             border-radius: 10px;
@@ -52,6 +63,41 @@
         .square-content {
             text-align: center;
         }
+
+        footer {
+            background-color: #08254ce2;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .button-contactForm,
+.header-btn {
+    background: #fbfcfd;
+    color: #ae0d0d !important;
+    display: inline-block;
+    padding: 10px 18px; /* Adjusted padding for a smaller button */
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #ffffff;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 28px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-contactForm:hover,
+.header-btn:hover {
+    background: #ff656a !important;
+    color: #ffffff !important;
+}
+
     </style>
 </head>
 
@@ -75,32 +121,33 @@
                 </li>
                 <li class="nav-item">
                     <div class="header-right-btn f-right d-none d-lg-block">
-                        <a href="./Contactus .html" class="btn header-btn" style="
-                        background-color: #fbfbfb;
-                    ">Contact Now</a>
+                        <a href="./Contactus .html" class="btn header-btn">Contact Now</a>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
-    <section id="aboutUs" style="background-color: aliceblue !important;">
-        <div class="container" style="
-        margin-left: 885px;
-        margin-top: -47px;
-    ">
-            <div class="about-us-container" style="background-color: #eef7ff !important;">
-                <h4>About us</h4>
-                <p class="lead" style="
-                color: #555 !important;
-                text-align: justify !important;
-                margin-bottom: 30px !important;
-            ">Welcome to Scorvigo Tech Pvt Ltd, a pioneering force in the realm of technology and innovation. At Scorvigo, we redefine possibilities through our expertise in software development, website creation, and digital marketing. Our unwavering commitment to excellence is reflected in our dedicated team of professionals who strive to deliver unparalleled solutions.</p>
-                <p style="text-align: justify !important;">In the ever-evolving landscape of technology, Scorvigo stands as a beacon of creativity and proficiency. We specialize in crafting custom software solutions tailored to meet the unique needs of your business. From dynamic websites that captivate audiences to strategic digital marketing campaigns that drive growth, we are your comprehensive partner in the digital realm.</p>
-                <p style="text-align: justify !important;">Our ethos revolves around merging creativity with technology, ensuring that every project we undertake is not just a task but an opportunity to innovate. Scorvigo Tech is not merely a service provider; we are your strategic ally in navigating the complexities of the digital landscape. Trust us to transform your ideas into reality, your vision into success.</p>
-                <p style="text-align: justify !important;">Join us on this exciting journey of digital transformation, where Scorvigo Tech becomes the catalyst for your brand's ascendancy. Welcome to a world where innovation knows no bounds, and excellence is not just a goal but a standard.</p>
+
+    <section id="aboutUs">
+        <div class="container">
+            <div class="about-us-container">
+                <h2>About Us</h2>
+                <p class="lead">
+                    Welcome to Scorvigo Tech Pvt Ltd, where innovation meets excellence in the ever-evolving landscape of technology and digital solutions. We are not just a service provider; we are your strategic ally in navigating the complexities of the digital landscape.
+                </p>
+                <p>
+                    At Scorvigo, we are a pioneering force committed to redefining possibilities through our expertise in software development, website creation, and cutting-edge digital marketing. Our unwavering dedication to excellence is reflected in our team of passionate professionals who strive to deliver unparalleled solutions.
+                </p>
+                <p>
+                    Our ethos revolves around merging creativity with technology, ensuring that each project is not just a task but an opportunity to innovate. We specialize in crafting custom software solutions tailored to meet the unique needs of your business. From dynamic websites that captivate audiences to strategic digital marketing campaigns that drive growth, we are your comprehensive partner in the digital realm.
+                </p>
+                <p>
+                    Trust us to transform your ideas into reality, your vision into success. Join us on this exciting journey of digital transformation, where Scorvigo Tech becomes the catalyst for your brand's ascendancy. Welcome to a world where innovation knows no bounds, and excellence is not just a goal but a standard.
+                </p>
             </div>
         </div>
     </section>
+    
 
     <footer>
         &copy; 2024 Scorvigo Tech Pvt Ltd

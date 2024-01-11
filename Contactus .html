@@ -9,9 +9,108 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./Styles.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+            font-family: 'Arial', sans-serif;
+        }
+
+        nav {
+            background-color: #007bff;
+        }
+
+        nav a.navbar-brand,
+        nav a.nav-link {
+            color: white !important;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #007bff;
+        }
+
+        p {
+            text-align: center;
+            color: #6c757d;
+        }
+
+        .contact-info {
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .contact-box,
+        .email-box {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            transition: transform 0.2s;
+        }
+
+        .contact-box:hover,
+        .email-box:hover {
+            transform: scale(1.05);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .request-back-area {
+            background-color: #007bff;
+            padding: 80px 0;
+            color: #fff;
+        }
+
+        .form-wrapper {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-wrapper h2,
+        .form-wrapper p {
+            color: #007bff;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+
+        .button-contactForm {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
     <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#" style="color: white;">Scorvigo Tech Pvt Ltd</a>
@@ -45,26 +144,29 @@
 
     <div class="contact-info">
         <div class="row">
-            <div class="col-md-6">
-                <div class="contact-box">
+            <!-- Contact Us -->
+            <div class="col-md-6 mb-4">
+                <div class="contact-box text-center">
                     <i class="icon fas fa-phone"></i>
                     <h4>Contact Us</h4>
-                    <p>Feel free to give us a call.</p>
-                    <a href="tel:+918329952678" style="color: #fff;">8329952678</a><br>
-                    <a href="tel:+8149572640" style="color: #fff;">8149572640</a>
+                    <p>Feel free to give us a call:</p>
+                    <a href="tel:+918329952678" style="color: #007bff;">832-995-2678</a><br>
+                    <a href="tel:+8149572640" style="color: #007bff;">814-957-2640</a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="email-box">
+            <!-- Email Us -->
+            <div class="col-md-6 mb-4">
+                <div class="email-box text-center">
                     <i class="icon fas fa-envelope"></i>
                     <h4>Email Us</h4>
-                    <p>Send us an email with your inquiries.</p>
-                    <a href="mailto:mayursonne995@gmail.com" style="color: #fff;">mayursonne995@gmail.com</a><br>
-                    <a href="mailto:mail.nikita1611@gmail.com" style="color: #fff;">mail.nikita1611@gmail.com</a>
+                    <p>Send us an email with your inquiries:</p>
+                    <a href="mailto:mayursonne995@gmail.com" style="color: #007bff;">mayursonne995@gmail.com</a><br>
+                    <a href="mailto:mail.nikita1611@gmail.com" style="color: #007bff;">mail.nikita1611@gmail.com</a>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <section class="request-back-area">
         <div class="container">

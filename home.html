@@ -12,9 +12,57 @@
     <link rel="stylesheet" href="./Styles.css">
     <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
 </head>
+<style>
+   
+
+    nav {
+        background-color: #08254ce2 !important; /* Consistent navigation bar color */
+    }
+
+    .navbar-brand,
+    .nav-link,
+    .header-btn {
+        color: white !important; /* Consistent text color for navigation links and buttons */
+    }
+
+    footer {
+        background-color: #08254ce2 !important;
+        color: white;
+        text-align: center;
+        padding: 10px 0 !important;
+        position: fixed !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        }
+
+    .button-contactForm,
+.header-btn {
+background: #fbfcfd;
+color: #ae0d0d !important;
+display: inline-block;
+padding: 10px 18px; /* Adjusted padding for a smaller button */
+font-family: "Poppins", sans-serif;
+font-size: 14px;
+font-weight: 400;
+border: 1px solid #ffffff;
+letter-spacing: 3px;
+text-align: center;
+text-transform: uppercase;
+cursor: pointer;
+border-radius: 28px;
+transition: background-color 0.3s, color 0.3s;
+}
+
+.button-contactForm:hover,
+.header-btn:hover {
+background: #ff656a !important;
+color: #ffffff !important;
+}
+
+</style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">Scorvigo Tech Pvt Ltd</a>
+        <a class="navbar-brand" href="#" style="color: white;">Scorvigo Tech Pvt Ltd</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,7 +84,6 @@
                     </div>
                 </li>
             </ul>
-            
         </div>
     </nav>
     
@@ -154,6 +201,7 @@
     </footer>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <script src="./Script.js"></script>
+    
 </body>
 
 </html>

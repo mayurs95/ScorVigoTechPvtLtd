@@ -7,9 +7,6 @@
     <title>ScorVigo Tech Pvt Ltd</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <style>
         body {
             background-color: #f8f9fa;
@@ -17,19 +14,24 @@
             font-family: 'Arial', sans-serif;
         }
 
-        nav {
-            background-color: #007bff;
+        .container {
+            margin-top: 30px;
         }
 
-        nav a.navbar-brand,
-        nav a.nav-link {
+        .navbar {
+            background-color: #08254ce2 !important;
+        }
+
+        .navbar a.navbar-brand,
+        .navbar a.nav-link,
+        .header-btn {
             color: white !important;
         }
 
         h1 {
             text-align: center;
             margin-top: 50px;
-            color: #007bff;
+            color: #121518;
         }
 
         p {
@@ -37,78 +39,91 @@
             color: #6c757d;
         }
 
-        .contact-info {
-            margin: 50px auto;
+        .btn-primary,
+        .btn-success {
+            background-color: #002d5b;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-primary:hover,
+        .btn-success:hover {
+            background-color: #ff656a;
+            color: #ffffff;
+        }
+
+        .contact-section {
+            background-image: url('./telephone-612061_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
             text-align: center;
+            padding: 50px 0;
         }
 
-        .contact-box,
-        .email-box {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            transition: transform 0.2s;
-        }
 
-        .contact-box:hover,
-        .email-box:hover {
-            transform: scale(1.05);
-        }
-
-        .icon {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        .request-back-area {
-            background-color: #007bff;
-            padding: 80px 0;
-            color: #fff;
-        }
-
-        .form-wrapper {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .form-wrapper h2,
-        .form-wrapper p {
+        .social-icons a {
+            margin-right: 10px;
             color: #007bff;
         }
 
-        .form-group {
-            margin-bottom: 20px;
+        
+        .button-contactForm,
+.header-btn {
+    background: #fbfcfd;
+    color: #ae0d0d !important;
+    display: inline-block;
+    padding: 10px 18px; /* Adjusted padding for a smaller button */
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #ffffff;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 28px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-contactForm:hover,
+.header-btn:hover {
+    background: #ff656a !important;
+    color: #ffffff !important;
+}
+
+        .social-icons i {
+            font-size: 24px;
         }
 
-        .form-control {
-            border: 1px solid #ced4da;
-            border-radius: 5px;
-        }
-
-        .button-contactForm {
-            background-color: #007bff;
+        .request-back-area {
+            background-color: #002d5b;
+            padding: 80px 0;
             color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
         }
+        a.btn.btn-primary.btn-lg {
+                    margin-bottom: 65px;
+                }
+                a.btn.btn-primary.btn-lg {
+                                            margin-left: 112px;
+                                         }
 
+                                         a.btn.btn-success.btn-lg {
+    margin-right: 133px;
+}
         footer {
-            background-color: #007bff;
+            background-color: #08254ce2 !important;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 15px 0 !important;
+            position: fixed !important;
+            bottom: 0 !important;
+            width: 100% !important;
         }
     </style>
-
-    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -131,44 +146,103 @@
                 </li>
                 <li class="nav-item">
                     <div class="header-right-btn f-right d-none d-lg-block">
-                        <a href="Contactus.html" class="btn header-btn">Contact Now</a>
+                        <a href="./Contactus .html" class="btn header-btn" style="
+                        background-color: #fbfbfb;
+                    ">Contact Now</a>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <h1>Contact Us</h1>
+    <!-- Contact Section with Background Image -->
+    <div class="contact-section">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or concerns, feel free to reach out to us using the following contact information:</p>
+        </div>
+    
+    <!-- End Contact Section -->
 
-    <p>If you have any questions or concerns, feel free to reach out to us using the following contact information:</p>
-
-    <div class="contact-info">
+    <!-- Call, Social Media Links, and Email Buttons Section -->
+    <div class="container mt-5">
         <div class="row">
-            <!-- Contact Us -->
-            <div class="col-md-6 mb-4">
-                <div class="contact-box text-center">
-                    <i class="icon fas fa-phone"></i>
-                    <h4>Contact Us</h4>
-                    <p>Feel free to give us a call:</p>
-                    <a href="tel:+918329952678" style="color: #007bff;">832-995-2678</a><br>
-                    <a href="tel:+8149572640" style="color: #007bff;">814-957-2640</a>
+            <div class="col-md-4 text-center">
+                <a href="tel:+123456789" class="btn btn-primary btn-lg">Call Us</a>
+            </div>
+            <div class="col-md-4 text-center">
+                <!-- Social Media Links -->
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <!-- Add more social media links and icons as needed -->
                 </div>
             </div>
-            <!-- Email Us -->
-            <div class="col-md-6 mb-4">
-                <div class="email-box text-center">
-                    <i class="icon fas fa-envelope"></i>
-                    <h4>Email Us</h4>
-                    <p>Send us an email with your inquiries:</p>
-                    <a href="mailto:mayursonne995@gmail.com" style="color: #007bff;">mayursonne995@gmail.com</a><br>
-                    <a href="mailto:mail.nikita1611@gmail.com" style="color: #007bff;">mail.nikita1611@gmail.com</a>
+            <div class="col-md-4 text-center">
+                <a href="mailto:info@scorvigo.com" class="btn btn-success btn-lg">Email Us</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Call, Social Media Links, and Email Buttons Section -->
+    
+    
+    
+    
+    <!-- Request a Call Section -->
+    <div class="request-back-area section-padding30" style="background-color: #002d5b;">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-xl-3 col-lg-4 col-md-5">
+                    <div class="request-content">
+                        <h3 style="color: #fff;">Request a Call</h3>
+                        <p style="color: #fff;">In case of any queries regarding our products or services, kindly fill in the enquiry form to place a callback. Our representatives will get in touch with you shortly.</p>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-md-7">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="">
+                                <div class="form-contact contact_form" id="contactForm" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m1-3">
+                                        <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.1044496582185!2d79.06345131446882!3d21.148241185933713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0f57621f4fd%3A0xdfb5dcfaf9146b64!2sRTO+Rd%2C+Priyadarshini+Colony%2C+Civil+Lines%2C+Nagpur%2C+Maharashtra+440001!5e0!3m2!1sen!2sin!4v1552384771983" height="350" frameborder="0" style="border-radius: 24px;"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
-
-    <section class="request-back-area">
+    <!-- End Request a Call Section -->
+    <!-- <section class="request-back-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -201,7 +275,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer>
         &copy; 2024 Scorvigo Tech Pvt Ltd

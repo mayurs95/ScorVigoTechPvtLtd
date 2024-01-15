@@ -17,7 +17,7 @@
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f8f9fa; /* Consistent background color */
+            background-color: #eef7ff; /* Consistent background color */
         }
 
         nav {
@@ -98,6 +98,56 @@
     color: #ffffff !important;
 }
 
+.animated-icon {
+            font-size: 40px;
+            margin-right: 10px;
+            color: #218bf5;
+        }
+
+        .animated-divider {
+            height: 2px;
+            background-color: #007bff;
+            margin: 20px 0;
+        }
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon-text {
+            margin-left: 10px;
+        }
+        /* .contact-section {
+            background-image: url('./computer-2982270_1280.jpg');
+            background-size: cover;
+            background-position: center;
+           
+           
+            padding: 50px 0;
+        } */
+        .contact-section {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./computer-2982270_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    animation: backgroundAnimation 10s infinite alternate; /* Adjust the duration and animation type as needed */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(120%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
     </style>
 </head>
 
@@ -127,26 +177,40 @@
             </ul>
         </div>
     </nav>
-
+    <div class="contact-section">
     <section id="aboutUs">
         <div class="container">
-            <div class="about-us-container">
+            <div class="about-us-container animate__animated animate__fadeIn">
                 <h2>About Us</h2>
-                <p class="lead">
-                    Welcome to Scorvigo Tech Pvt Ltd, where innovation meets excellence in the ever-evolving landscape of technology and digital solutions. We are not just a service provider; we are your strategic ally in navigating the complexities of the digital landscape.
-                </p>
-                <p>
-                    At Scorvigo, we are a pioneering force committed to redefining possibilities through our expertise in software development, website creation, and cutting-edge digital marketing. Our unwavering dedication to excellence is reflected in our team of passionate professionals who strive to deliver unparalleled solutions.
-                </p>
-                <p>
-                    Our ethos revolves around merging creativity with technology, ensuring that each project is not just a task but an opportunity to innovate. We specialize in crafting custom software solutions tailored to meet the unique needs of your business. From dynamic websites that captivate audiences to strategic digital marketing campaigns that drive growth, we are your comprehensive partner in the digital realm.
-                </p>
-                <p>
-                    Trust us to transform your ideas into reality, your vision into success. Join us on this exciting journey of digital transformation, where Scorvigo Tech becomes the catalyst for your brand's ascendancy. Welcome to a world where innovation knows no bounds, and excellence is not just a goal but a standard.
-                </p>
+                <div class="icon-container">
+                    <i class="fas fa-cogs animated-icon"></i>
+                    <p class="icon-text">
+                        Welcome to Scorvigo Tech Pvt Ltd, where innovation meets excellence in the ever-evolving landscape of technology and digital solutions. We are not just a service provider; we are your strategic ally in navigating the complexities of the digital landscape.
+                    </p>
+                </div>
+                <div class="icon-container">
+                    <i class="fas fa-chart-line animated-icon"></i>
+                    <p class="icon-text">
+                        At Scorvigo, we are a pioneering force committed to redefining possibilities through our expertise in software development, website creation, and cutting-edge digital marketing. Our unwavering dedication to excellence is reflected in our team of passionate professionals who strive to deliver unparalleled solutions.
+                    </p>
+                </div>
+                <div class="icon-container">
+                    <i class="fas fa-paint-brush animated-icon"></i>
+                    <p class="icon-text">
+                        Our ethos revolves around merging creativity with technology, ensuring that each project is not just a task but an opportunity to innovate. We specialize in crafting custom software solutions tailored to meet the unique needs of your business.
+                    </p>
+                </div>
+                <div class="icon-container">
+                    <i class="fas fa-globe animated-icon"></i>
+                    <p class="icon-text">
+                        Trust us to transform your ideas into reality, your vision into success. Join us on this exciting journey of digital transformation, where Scorvigo Tech becomes the catalyst for your brand's ascendancy.
+                    </p>
+                </div>
             </div>
+            <div class="animated-divider"></div>
         </div>
     </section>
+    </div>
     
 
     <footer>

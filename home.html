@@ -25,7 +25,7 @@
         color: white !important; /* Consistent text color for navigation links and buttons */
     }
 
-    footer {
+    /* footer {
         background-color: #08254ce2 !important;
         color: white;
         text-align: center;
@@ -33,7 +33,18 @@
         position: fixed !important;
         bottom: 0 !important;
         width: 100% !important;
-        }
+        } */
+
+        footer {
+    background-color: #08254ce2 !important;
+    color: white;
+    text-align: center;
+    padding: 10px 0 !important;
+    width: 100%;
+    position: relative; /* Change fixed to relative */
+    clear: both; /* Clear any floated elements */
+}
+
 
     .button-contactForm,
 .header-btn {
@@ -51,6 +62,16 @@ text-transform: uppercase;
 cursor: pointer;
 border-radius: 28px;
 transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-section {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./program-3460032_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    animation: backgroundAnimation 10s infinite alternate; /* Adjust the duration and animation type as needed */
 }
 
 .button-contactForm:hover,
@@ -86,7 +107,7 @@ color: #ffffff !important;
             </ul>
         </div>
     </nav>
-    
+    <div class="contact-section">
     <div class="services-area">
         <div class="container">
             <div class="row">
@@ -142,7 +163,7 @@ color: #ffffff !important;
             </div>
         </div>
     </div>
-
+    </div>
     <!-- Request a Call Section -->
     <div class="request-back-area section-padding30" style="background-color: #002d5b;">
         <div class="container">
